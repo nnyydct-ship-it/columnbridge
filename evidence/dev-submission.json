@@ -1,0 +1,31 @@
+{
+  "verified_at": "2026-10-18T09:29:38.513915+00:00",
+  "public_api_url": "https://dev.to/api/articles/_360f299373efce95981ebc/columnbridge-local-embeddings-that-stop-before-renaming-the-wrong-csv-column-2n20",
+  "article_id": 4871224,
+  "url": "https://dev.to/_360f299373efce95981ebc/columnbridge-local-embeddings-that-stop-before-renaming-the-wrong-csv-column-2n20",
+  "title": "ColumnBridge: local embeddings that stop before renaming the wrong CSV column",
+  "tags": [
+    "devchallenge",
+    "hf26challenge",
+    "ai",
+    "opensource"
+  ],
+  "published_at": "2026-10-18T09:28:05Z",
+  "created_at": "2026-10-18T09:28:07Z",
+  "author": {
+    "name": "EvidenceHarbor",
+    "username": "_360f299373efce95981ebc"
+  },
+  "approved_content_exact_match_after_frontmatter_and_edge_whitespace": true,
+  "full_basic_markdown_exact_match_ignoring_edge_whitespace": true,
+  "approved_body_sha256": "0f5dcd8d96dcf71dab35c7ba405b831d79ed110ed6e0d748b049760df9e633d0",
+  "public_markdown_sha256": "21de109a5571e6d35413e98b0d3b58a62781f9775b6171df48686d594a3c4c04",
+  "verification_note": "Forem GET detail returns tag_list as comma string, tags as array and body_markdown includingBasic frontmatter; verification compares the correct representations.",
+  "ai_disclosure_level": "fully_autonomous",
+  "native_challenge_label": "Hacktoberfest Open-SourceAIChallengeWeek2 SideHustle submission",
+  "public_read_without_auth": true,
+  "income": {
+    "this_submission_received_usdc": "0.00",
+    "not_an_award_or_payment": true
+  }
+}

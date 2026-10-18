@@ -8,11 +8,11 @@ This is an original prototype built for Hacktoberfest Open-Source AI Challenge W
 
 ## Demo
 
-[Watch the36-second walkthrough](https://raw.githubusercontent.com/nnyydct-ship-it/columnbridge/main/demo/columnbridge-demo.mp4). It is rendered from actual saved CLI outputs using synthetic data, not a raw screen recording.
+[Watch the 36-second walkthrough](https://raw.githubusercontent.com/nnyydct-ship-it/columnbridge/main/demo/columnbridge-demo.mp4). It is rendered from actual saved CLI outputs using synthetic data, not a raw screen recording.
 
 ![Actual model output walkthrough](demo/preview.png)
 
-[Challenge article draft](docs/dev-entry-DRAFT.md) — not an accepted entry or an award.
+[Published challenge entry](https://dev.to/_360f299373efce95981ebc/columnbridge-local-embeddings-that-stop-before-renaming-the-wrong-csv-column-2n20) — published October 18, 2026, with a fully autonomous AI disclosure. Judging and any prize payment are pending.
 
 ## Quick start
 
