@@ -1,0 +1,93 @@
+{
+  "reviewed_at": "2026-10-18T10:30:12.828309+00:00",
+  "reviewer": "Independent source reviewer",
+  "review_type": "Read-only static source and README audit; implementation not changed, no converter/test code executed",
+  "decision": "PASS_NO_ACTIONABLE_SOURCE_FINDINGS_WITHIN_REQUESTED_SCOPE",
+  "source_file": "csvjson.py",
+  "source_sha256": "ef5bb6b50ddfe7b4425db099531acc8921dbd3b66eedcd336a141c59b4c437cc",
+  "readme_file": "README.md",
+  "readme_sha256": "8cf356888a22cb82a40668348f861097c3263de007e28ee1583a45a54f3fed3c",
+  "freeze_coordination": "Code agent confirmed initial89b6d5e... freeze, then confirmed only explicit streamed NUL refusal and README changed to finalef5bb6b...; final source hash was independently checked before report.",
+  "findings": [],
+  "checks": [
+    {
+      "area": "No overwrite, including output aliases and publication races",
+      "result": "pass",
+      "evidence": "lstat rejects every existing destination directory entry, including dangling symlinks and hardlinks. Final os.link(...,follow_symlinks=False) atomically fails with EEXIST if a competing output entry appears; there is no replace/rename-overwrite fallback.",
+      "source_lines": [
+        99,
+        160
+      ],
+      "dynamic_race_test_run_by_this_reviewer": false
+    },
+    {
+      "area": "Input read only and regular-file boundary",
+      "result": "pass",
+      "evidence": "Source is opened O_RDONLY|O_NONBLOCK, fstat must be regular, and no source write/truncate/replace occurs. Existing same-name or hardlinked output entries are rejected by destination lstat. Ordinary size/mtime changes abort before publication.",
+      "source_lines": [
+        112,
+        114,
+        152
+      ]
+    },
+    {
+      "area": "Temporary output lifecycle and permissions",
+      "result": "pass",
+      "evidence": "Same-directory mkstemp supplies a private temporary file; fchmod reinforces0600. Output flush/fsync occurs before publication. finally removes the temporary name for both success and conversion exceptions, and restores the previous csv field-size limit. The final hard link refers to the completed0600 inode.",
+      "source_lines": [
+        134,
+        137,
+        150,
+        170
+      ]
+    },
+    {
+      "area": "Actual input/output/field bounds",
+      "result": "pass",
+      "evidence": "Positive integer limits; initial input stat and counted streamed bytes enforce100MiB default even if source grows. csv.field_size_limit enforces1Mi characters per field, header count is capped at10000, and BoundedWriter counts actual UTF8 serialization bytes against200MiB default before writing. Rows are not accumulated.",
+      "source_lines": [
+        16,
+        17,
+        18,
+        43,
+        62,
+        129
+      ]
+    },
+    {
+      "area": "UTF8 and CSV boundaries",
+      "result": "pass",
+      "evidence": "UTF8-sig with strict decoding; newline=\"\" and csv.reader strict=True support quoted newlines and configurable distinct delimiters/quote characters. Binary NUL is explicitly rejected in the byte reader across Python versions. Empty/blank/exact-duplicate headers and row-width mismatch reject before final output; JSON serialization preserves logical string values and escapes data.",
+      "source_lines": [
+        45,
+        120,
+        122,
+        131,
+        141
+      ]
+    },
+    {
+      "area": "No execution, network or formula interpretation",
+      "result": "pass",
+      "evidence": "Only standard-library CSV/JSON, file and CLI operations are imported. No eval/exec, subprocess, shell, network client or dependency installer exists. Formula/HTML-looking cells remain JSON strings. README explicitly disclaims sanitizing spreadsheets and universal safety.",
+      "source_lines": [
+        146
+      ]
+    }
+  ],
+  "verification_not_performed_here": [
+    "No unit test rerun",
+    "No root black-box rerun",
+    "No CSV conversion or filesystem race harness run",
+    "No dependency install, network call or external command from the reviewed program"
+  ],
+  "declared_limits": [
+    "Static audit is not a general security certification.",
+    "Publishing requires the documented same-directory hardlink-capable filesystem.",
+    "Source size/mtime checks are not an immutable input snapshot or concurrent-writer locking protocol."
+  ],
+  "business_status": "Synthetic, uncommissioned prototype. No order, award or income claimed.",
+  "implementation_or_readme_modified": false,
+  "source_still_frozen_sha256": "ef5bb6b50ddfe7b4425db099531acc8921dbd3b66eedcd336a141c59b4c437cc",
+  "readme_hash_note": "Public copy has coordination prose removed; executable unchanged."
+}

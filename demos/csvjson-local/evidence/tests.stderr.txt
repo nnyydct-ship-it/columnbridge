@@ -1,0 +1,21 @@
+test_cli_invalid_options_fail_without_output (test_csvjson.ConversionTests) ... ok
+test_cli_named_delimiter_summary_and_no_stdout_data (test_csvjson.ConversionTests) ... ok
+test_duplicate_and_empty_headers_fail (test_csvjson.ConversionTests) ... ok
+test_existing_regular_symlink_dangling_link_and_hardlink_outputs_refused (test_csvjson.ConversionTests) ... ok
+test_field_limit_restored_on_failure (test_csvjson.ConversionTests) ... ok
+test_formula_html_backslash_values_are_only_json_strings (test_csvjson.ConversionTests) ... ok
+test_header_only_produces_empty_array (test_csvjson.ConversionTests) ... ok
+test_input_byte_and_field_limits (test_csvjson.ConversionTests) ... ok
+test_invalid_utf8_fails_without_replacement_characters (test_csvjson.ConversionTests) ... ok
+test_nul_rejected_in_quoted_field_and_header_on_every_python_version (test_csvjson.ConversionTests) ... ok
+test_output_amplification_limit_cleans_partial_file (test_csvjson.ConversionTests) ... ok
+test_racing_output_writer_is_not_overwritten (test_csvjson.ConversionTests) ... ok
+test_ragged_or_unterminated_records_fail_after_partial_temp_write (test_csvjson.ConversionTests) ... ok
+test_rfc_quotes_embedded_lines_unicode_bom_and_string_values (test_csvjson.ConversionTests) ... ok
+test_semicolon_tab_pipe_and_custom_quote (test_csvjson.ConversionTests) ... ok
+test_stream_limit_catches_growth_beyond_initial_stat (test_csvjson.ConversionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.153s
+
+OK

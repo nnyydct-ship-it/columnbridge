@@ -1,0 +1,46 @@
+{
+  "contacts.csv": [
+    {
+      "id": "0001",
+      "name": "Mira, Chen",
+      "notes": "She said \"hello\"\r\n第二行",
+      "empty": ""
+    },
+    {
+      "id": "0002",
+      "name": "Leon Ortiz",
+      "notes": "Synthetic example only",
+      "empty": ""
+    }
+  ],
+  "semicolon.csv": [
+    {
+      "sku": "0007",
+      "description": "Part; with delimiter"
+    },
+    {
+      "sku": "0008",
+      "description": "\\path\\demo"
+    }
+  ],
+  "tabs.tsv": [
+    {
+      "item": "Notebook",
+      "quantity": "03"
+    },
+    {
+      "item": "Pen",
+      "quantity": "0004"
+    }
+  ],
+  "single-quotes.csv": [
+    {
+      "id": "001",
+      "notes": "It's a quoted field, with a comma"
+    },
+    {
+      "id": "002",
+      "notes": "Line one\nLine two"
+    }
+  ]
+}

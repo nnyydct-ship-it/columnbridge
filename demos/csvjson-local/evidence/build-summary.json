@@ -1,0 +1,72 @@
+{
+  "status": "unaccepted_proposal_prototype",
+  "frozen_at_utc": "2026-10-18T10:19:03.102614+00:00",
+  "python": "3.9.6",
+  "source_sha256": "ef5bb6b50ddfe7b4425db099531acc8921dbd3b66eedcd336a141c59b4c437cc",
+  "files": {
+    "LICENSE": {
+      "bytes": 1087,
+      "sha256": "9aa2a7ff79011b76ce0474c25d385bacb025a59bb97f9f25cb4f6ca8b2052df6"
+    },
+    "README.md": {
+      "bytes": 4570,
+      "sha256": "f7d345b67fe0b9a938a4918e826a2c7d862cc4c32b37e0be64c2eaa262dc1728"
+    },
+    "csvjson.py": {
+      "bytes": 9118,
+      "sha256": "ef5bb6b50ddfe7b4425db099531acc8921dbd3b66eedcd336a141c59b4c437cc"
+    },
+    "fixtures/contacts.csv": {
+      "bytes": 117,
+      "sha256": "551568fe5bac70f6525e921b7c5c446041cd543bf9e50340221383717f0ea6c6"
+    },
+    "fixtures/expected.json": {
+      "bytes": 770,
+      "sha256": "83d9b20e58528afd0c02d2305fd709c2d0ae804bfad9da671a0da02b5bb00a98"
+    },
+    "fixtures/semicolon.csv": {
+      "bytes": 63,
+      "sha256": "968390afab7957c3aefe45b9d8323bd7cdf4a8abb2cfea2e85c100bc4c37b09a"
+    },
+    "fixtures/single-quotes.csv": {
+      "bytes": 77,
+      "sha256": "4d93f38fcb52257a8c838923a1b70e75888b97dbe30f14e9e1071181e954e288"
+    },
+    "fixtures/tabs.tsv": {
+      "bytes": 38,
+      "sha256": "de5287de1d47f8cf3fd8954877f736c767e66649c0b51ae8ea9bff0874926256"
+    },
+    "tests/test_csvjson.py": {
+      "bytes": 9048,
+      "sha256": "6c25455129356c38c583c603902f946e50383948e7041c2b4e73f748d151bf00"
+    }
+  },
+  "unit_tests": {
+    "count": 16,
+    "passed": 16,
+    "evidence": "evidence/tests.stderr.txt"
+  },
+  "demo": {
+    "synthetic_only": true,
+    "command": "python3 csvjson.py fixtures/contacts.csv --output evidence/contacts-demo-final.json",
+    "exit_code": 0,
+    "independent_json_load_matches_fixture": true,
+    "summary": {
+      "status": "ok",
+      "rows": 2,
+      "columns": 4,
+      "delimiter": ",",
+      "encoding": "utf-8-sig",
+      "values": "strings",
+      "input_bytes": 117,
+      "input_sha256": "551568fe5bac70f6525e921b7c5c446041cd543bf9e50340221383717f0ea6c6",
+      "output_bytes": 188
+    },
+    "source_sha256": "ef5bb6b50ddfe7b4425db099531acc8921dbd3b66eedcd336a141c59b4c437cc",
+    "evidence": "evidence/demo-final.stdout.txt"
+  },
+  "external_actions": false,
+  "buyer_acceptance": false,
+  "income_claim": false,
+  "revision_note": "Explicit binary NUL rejection for Python-version-independent text CSV behavior."
+}

@@ -1,0 +1,503 @@
+{
+  "synthetic_only": true,
+  "client_work_accepted": false,
+  "ordinary_python_sockets_disabled": true,
+  "os_network_syscalls_measured": false,
+  "guard_control_passed": true,
+  "cli_sha256": "ef5bb6b50ddfe7b4425db099531acc8921dbd3b66eedcd336a141c59b4c437cc",
+  "cli_unchanged": true,
+  "checks": 35,
+  "passed": 35,
+  "cases": [
+    {
+      "name": "comma",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "bom_unicode",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "quoted_commas_quotes",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "quoted_crlf",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "tab",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "semicolon",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "pipe",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "custom_delimiter",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "single_quote",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "strings_not_coerced",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "json_escaping",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "binary_nul_rejected",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: NUL bytes are not supported in UTF-8 text CSV.\n"
+    },
+    {
+      "name": "formula_preserved",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "empty_cells",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "header_only",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "zero_exit": true,
+        "exact_json": true,
+        "mode_0600": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "duplicate_header",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Duplicate header names are not supported.\n"
+    },
+    {
+      "name": "empty_header",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Empty or whitespace-only headers are not supported.\n"
+    },
+    {
+      "name": "space_header",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Empty or whitespace-only headers are not supported.\n"
+    },
+    {
+      "name": "row_too_long",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: CSV record ending at physical line 2 has 3 cells; expected 2.\n"
+    },
+    {
+      "name": "row_too_short",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: CSV record ending at physical line 2 has 1 cells; expected 2.\n"
+    },
+    {
+      "name": "late_bad_row_no_partial_output",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: CSV record ending at physical line 3 has 1 cells; expected 2.\n"
+    },
+    {
+      "name": "unterminated_quote",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Invalid CSV or UTF-8 input: unexpected end of data\n"
+    },
+    {
+      "name": "junk_after_closing_quote",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Invalid CSV or UTF-8 input: ',' expected after '\"'\n"
+    },
+    {
+      "name": "invalid_utf8",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Invalid CSV or UTF-8 input: 'utf-8' codec can't decode byte 0xff in position 2: invalid start byte\n"
+    },
+    {
+      "name": "empty_input",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: CSV is empty; a header record is required.\n"
+    },
+    {
+      "name": "byte_limit",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Input exceeds --max-bytes; nothing was published.\n"
+    },
+    {
+      "name": "field_limit",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Invalid CSV or UTF-8 input: field larger than field limit (3)\n"
+    },
+    {
+      "name": "reject_output_existing",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "existing_output_unchanged": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Output already exists; choose a new output path.\n"
+    },
+    {
+      "name": "reject_output_symlink",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "existing_output_unchanged": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Output already exists; choose a new output path.\n"
+    },
+    {
+      "name": "reject_output_dangling",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "dangling_symlink_preserved": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Output already exists; choose a new output path.\n"
+    },
+    {
+      "name": "reject_output_hardlink",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "existing_output_unchanged": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Output already exists; choose a new output path.\n"
+    },
+    {
+      "name": "reject_output_directory",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "directory_preserved": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Output already exists; choose a new output path.\n"
+    },
+    {
+      "name": "reject_output_same",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "existing_output_unchanged": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: Output already exists; choose a new output path.\n"
+    },
+    {
+      "name": "bad_delimiter",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: delimiter must be one non-newline, non-NUL character.\n"
+    },
+    {
+      "name": "bad_quotechar",
+      "passed": true,
+      "checks": {
+        "input_unchanged": true,
+        "no_ordinary_python_socket_attempts": true,
+        "nonzero_exit": true,
+        "no_success_claim": true,
+        "no_output_on_error": true,
+        "no_temp_leftovers": true
+      },
+      "exit": 1,
+      "stderr": "csvjson: quotechar must be one non-newline, non-NUL character.\n"
+    }
+  ]
+}
