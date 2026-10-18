@@ -1,0 +1,31 @@
+
+> columnbridge@0.1.0 test
+> node --test test/*.test.js
+
+✔ header reader handles BOM, CRLF and quoted embedded newline without using samples (6.427875ms)
+✔ duplicate headers and missing inputs fail explicitly (4.517375ms)
+✔ explicit approved rename preserves CSV cell values, source bytes and formula text (6.217333ms)
+✔ unapproved or colliding review writes no output and no temp residue (1.182125ms)
+✔ malformed row length cleans partial output; existing output/input cannot be overwritten (2.683125ms)
+✔ atomic report write replaces symlink without changing CSV bytes (7.550208ms)
+✔ atomic report write replaces hardlink without changing CSV bytes (3.602792ms)
+✔ directory symlink cannot disguise the same input entry as a report path (3.969542ms)
+✔ cosine uses vector geometry, including non-normalized vectors (0.573416ms)
+✔ ranking depends on embeddings, not a string alias table (0.204792ms)
+✔ small margin and low similarity remain reviewable suggestions (4.900459ms)
+✔ both sides of a target collision require review, no forced runner-up (0.1105ms)
+✔ single-target schema has no invented runner-up confidence (0.067708ms)
+✔ weak unknown top-1 cannot poison a strong one-to-one suggestion (0.070542ms)
+✔ library inference sees exactly headers and user schema, not arbitrary properties (0.668125ms)
+✔ schema and header input bounds reject unclear/duplicate identity (0.112833ms)
+✔ review starts unapproved and source header fingerprint is bound (0.216459ms)
+✔ apply rejects collision with an unchanged column, unknown target and incomplete review (0.130208ms)
+✔ special object-key names are plain headers, never prototype operations (0.0755ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 83.342083

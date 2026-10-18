@@ -1,0 +1,465 @@
+{
+  "checked_at": "2026-10-18T08:16:39.389664+00:00",
+  "validation": "Final locked core source; complete original six-fixture matrix plus the same three apply checks rerun serially",
+  "core_source": {
+    "at": "2026-10-18T08:16:39.389664+00:00",
+    "definition": "SHA256 of sorted relative-path NUL file-SHA256 newline records; scope src/**/*.js,bin/**/*.js,package.json,package-lock.json",
+    "sha256": "780e2e4c5d35400630fc957b345cf57181e105687719f1099f456d406e55e356",
+    "files": [
+      {
+        "path": "bin/columnbridge.js",
+        "sha256": "4ae0499d32a346d6d9af2fb2d5db45491a6a9fb757ccc086c77e69a7788cd168",
+        "bytes": 3363
+      },
+      {
+        "path": "package-lock.json",
+        "sha256": "5c9d61ec0bf06964122044d4a166eb68b067e037fb784263c23bdace7e9b140c",
+        "bytes": 39047
+      },
+      {
+        "path": "package.json",
+        "sha256": "e75e4723ef7694e19c973a3a118dcb360cc4d227fe4e6caac4d4ea8baa1361ca",
+        "bytes": 957
+      },
+      {
+        "path": "src/csv.js",
+        "sha256": "50fcf21a4de2bdf31c35d1c5b6fc663f977303ff45fea857b0cf6dc45ef48727",
+        "bytes": 2166
+      },
+      {
+        "path": "src/files.js",
+        "sha256": "e3c8561bf6483dcea05948735a47ff315dd7e3d3409f974f535061da66a8be33",
+        "bytes": 1228
+      },
+      {
+        "path": "src/index.js",
+        "sha256": "4c28af71b460ac3ac0a826ab7ae0628d0590cff57cc07bc1d028d194cbf5e69f",
+        "bytes": 1706
+      },
+      {
+        "path": "src/matching.js",
+        "sha256": "f27ffb341208085e9887887e8820eb3bd3198bf291eded4ef1ade55fa648581f",
+        "bytes": 6290
+      },
+      {
+        "path": "src/model.js",
+        "sha256": "a17f160a43155ef698a03b8b3df40d79b3a88ade46b3acb5b70417f6af19b384",
+        "bytes": 1668
+      }
+    ],
+    "stable_before_after": true
+  },
+  "fixture_manifest_sha256": "714f9aab018e1225eca36d6429e02430008c5cd73ea1e1db3e52ffa1acbeb74b",
+  "fixtures_authored_before_implementation_read": true,
+  "production_source_read_or_edited_by_qa": false,
+  "model": {
+    "id": "Xenova/all-MiniLM-L6-v2",
+    "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+    "dtype": "q8",
+    "device": "cpu",
+    "threads": 2,
+    "license": "Apache-2.0"
+  },
+  "cases": [
+    {
+      "id": "01-normal-aliases",
+      "passed": true,
+      "exit": 0,
+      "suggested": 5,
+      "needs_review": 0,
+      "mappings": [
+        {
+          "source": "Order number",
+          "target": "order_id",
+          "status": "suggested",
+          "score": 0.6209221359916798,
+          "margin": 0.20681456951072352,
+          "reasons": []
+        },
+        {
+          "source": "Buyer email address",
+          "target": "customer_email",
+          "status": "suggested",
+          "score": 0.5869342657321072,
+          "margin": 0.34354989731863655,
+          "reasons": []
+        },
+        {
+          "source": "Item description",
+          "target": "product_name",
+          "status": "suggested",
+          "score": 0.5929423703613208,
+          "margin": 0.2344603337323038,
+          "reasons": []
+        },
+        {
+          "source": "Units purchased",
+          "target": "quantity",
+          "status": "suggested",
+          "score": 0.5589791834654118,
+          "margin": 0.08401130788249384,
+          "reasons": []
+        },
+        {
+          "source": "Price per unit",
+          "target": "unit_price",
+          "status": "suggested",
+          "score": 0.6855966231455123,
+          "margin": 0.23889383895760863,
+          "reasons": []
+        }
+      ],
+      "input_sha256": "f26befb3d3c8905a33c1fd4620e349085fbc483284bcdc213a0c0c9fa3952dfb",
+      "input_unchanged": true,
+      "network_attempt_count": 0,
+      "model_metrics": {
+        "textCount": 10,
+        "embeddingDimensions": 384,
+        "inferenceMs": 18.573459000000014
+      },
+      "model_load_ms": 122.327042
+    },
+    {
+      "id": "02-email-conflict",
+      "passed": true,
+      "exit": 0,
+      "suggested": 4,
+      "needs_review": 2,
+      "mappings": [
+        {
+          "source": "Order number",
+          "target": "order_id",
+          "status": "suggested",
+          "score": 0.6215327208230603,
+          "margin": 0.21306929913652312,
+          "reasons": []
+        },
+        {
+          "source": "Buyer email address",
+          "target": "customer_email",
+          "status": "needs_review",
+          "score": 0.5764038595124468,
+          "margin": 0.3271204667248383,
+          "reasons": [
+            "target_collision"
+          ]
+        },
+        {
+          "source": "Customer email address",
+          "target": "customer_email",
+          "status": "needs_review",
+          "score": 0.7452184710416627,
+          "margin": 0.45792655133510596,
+          "reasons": [
+            "target_collision"
+          ]
+        },
+        {
+          "source": "Item description",
+          "target": "product_name",
+          "status": "suggested",
+          "score": 0.6249844197369655,
+          "margin": 0.2484007983044509,
+          "reasons": []
+        },
+        {
+          "source": "Units purchased",
+          "target": "quantity",
+          "status": "suggested",
+          "score": 0.552925598281153,
+          "margin": 0.08103254293099038,
+          "reasons": []
+        },
+        {
+          "source": "Price per unit",
+          "target": "unit_price",
+          "status": "suggested",
+          "score": 0.6848645298729718,
+          "margin": 0.23740208531749546,
+          "reasons": []
+        }
+      ],
+      "input_sha256": "11102ac1c4e05d50d613a9263875594283ba0200cb720c10e29e0056b437309d",
+      "input_unchanged": true,
+      "network_attempt_count": 0,
+      "model_metrics": {
+        "textCount": 11,
+        "embeddingDimensions": 384,
+        "inferenceMs": 17.118708999999996
+      },
+      "model_load_ms": 61.57662499999999
+    },
+    {
+      "id": "03-rfc4180-bom-empty",
+      "passed": true,
+      "exit": 0,
+      "suggested": 5,
+      "needs_review": 1,
+      "mappings": [
+        {
+          "source": "Order number",
+          "target": "order_id",
+          "status": "suggested",
+          "score": 0.6140917217145041,
+          "margin": 0.20668064669154085,
+          "reasons": []
+        },
+        {
+          "source": "Buyer email address",
+          "target": "customer_email",
+          "status": "suggested",
+          "score": 0.5968923847968972,
+          "margin": 0.35885157392596234,
+          "reasons": []
+        },
+        {
+          "source": "Item description",
+          "target": "product_name",
+          "status": "suggested",
+          "score": 0.6253055571591635,
+          "margin": 0.2559211803833221,
+          "reasons": []
+        },
+        {
+          "source": "Units purchased",
+          "target": "quantity",
+          "status": "suggested",
+          "score": 0.539865089471476,
+          "margin": 0.0876981350358359,
+          "reasons": []
+        },
+        {
+          "source": "Price per unit",
+          "target": "unit_price",
+          "status": "suggested",
+          "score": 0.6685562830698308,
+          "margin": 0.23774378590289097,
+          "reasons": []
+        },
+        {
+          "source": "Notes",
+          "target": "quantity",
+          "status": "needs_review",
+          "score": 0.18212136999975687,
+          "margin": 0.008124952833001825,
+          "reasons": [
+            "low_similarity",
+            "small_margin"
+          ]
+        }
+      ],
+      "input_sha256": "a048f1bb464abf06489e25a4c1ea75322e5f1242741aa38b13b8943bd3a10363",
+      "input_unchanged": true,
+      "network_attempt_count": 0,
+      "model_metrics": {
+        "textCount": 11,
+        "embeddingDimensions": 384,
+        "inferenceMs": 15.962042000000011
+      },
+      "model_load_ms": 58.38958299999999
+    },
+    {
+      "id": "04-formula-text",
+      "passed": true,
+      "exit": 0,
+      "suggested": 5,
+      "needs_review": 1,
+      "mappings": [
+        {
+          "source": "Order number",
+          "target": "order_id",
+          "status": "suggested",
+          "score": 0.6140917217145041,
+          "margin": 0.20668064669154085,
+          "reasons": []
+        },
+        {
+          "source": "Buyer email address",
+          "target": "customer_email",
+          "status": "suggested",
+          "score": 0.5968923847968972,
+          "margin": 0.35885157392596234,
+          "reasons": []
+        },
+        {
+          "source": "Item description",
+          "target": "product_name",
+          "status": "suggested",
+          "score": 0.6253055571591635,
+          "margin": 0.2559211803833221,
+          "reasons": []
+        },
+        {
+          "source": "Units purchased",
+          "target": "quantity",
+          "status": "suggested",
+          "score": 0.539865089471476,
+          "margin": 0.0876981350358359,
+          "reasons": []
+        },
+        {
+          "source": "Price per unit",
+          "target": "unit_price",
+          "status": "suggested",
+          "score": 0.6685562830698308,
+          "margin": 0.23774378590289097,
+          "reasons": []
+        },
+        {
+          "source": "Notes",
+          "target": "quantity",
+          "status": "needs_review",
+          "score": 0.18212136999975687,
+          "margin": 0.008124952833001825,
+          "reasons": [
+            "low_similarity",
+            "small_margin"
+          ]
+        }
+      ],
+      "input_sha256": "8ec983a629c9c905d7f09c2c19e1e4ba222238e6e3aceac2b0b6119e36b5cc23",
+      "input_unchanged": true,
+      "network_attempt_count": 0,
+      "model_metrics": {
+        "textCount": 11,
+        "embeddingDimensions": 384,
+        "inferenceMs": 17.121250000000003
+      },
+      "model_load_ms": 64.959541
+    },
+    {
+      "id": "05-no-semantic-evidence",
+      "passed": true,
+      "exit": 0,
+      "suggested": 0,
+      "needs_review": 5,
+      "mappings": [
+        {
+          "source": "Zephyr",
+          "target": "product_name",
+          "status": "needs_review",
+          "score": 0.15726055077375795,
+          "margin": 0.06687400939899388,
+          "reasons": [
+            "low_similarity",
+            "small_margin"
+          ]
+        },
+        {
+          "source": "Moss",
+          "target": "product_name",
+          "status": "needs_review",
+          "score": 0.18296818911051363,
+          "margin": 0.05417631028342271,
+          "reasons": [
+            "low_similarity",
+            "small_margin"
+          ]
+        },
+        {
+          "source": "Quartz",
+          "target": "product_name",
+          "status": "needs_review",
+          "score": 0.1825437363015895,
+          "margin": 0.08308117804601742,
+          "reasons": [
+            "low_similarity"
+          ]
+        },
+        {
+          "source": "Velvet",
+          "target": "product_name",
+          "status": "needs_review",
+          "score": 0.19645857865921454,
+          "margin": 0.10972235470578613,
+          "reasons": [
+            "low_similarity"
+          ]
+        },
+        {
+          "source": "Orbit",
+          "target": "product_name",
+          "status": "needs_review",
+          "score": 0.10301280017972504,
+          "margin": 0.011824694874305139,
+          "reasons": [
+            "low_similarity",
+            "small_margin"
+          ]
+        }
+      ],
+      "input_sha256": "5f3c41d0efaf2c2fdf1d6a8e35ba355a77763ca833c44fb1e10efa23e9f60648",
+      "input_unchanged": true,
+      "network_attempt_count": 0,
+      "model_metrics": {
+        "textCount": 10,
+        "embeddingDimensions": 384,
+        "inferenceMs": 21.82008300000001
+      },
+      "model_load_ms": 72.513292
+    },
+    {
+      "id": "06-exact-duplicate-header",
+      "passed": true,
+      "behavior": "Explicit duplicate-header rejection",
+      "exit": 1,
+      "input_sha256": "8915e1cb7c034ab03440098f3a3cf31b72495f560c750f0bacdd913fb902b635",
+      "input_unchanged": true,
+      "network_attempt_count": 0
+    }
+  ],
+  "apply_checks": [
+    {
+      "id": "03-rfc4180-bom-empty",
+      "approved_by_test_author": false,
+      "exit": 1,
+      "output_exists": false,
+      "input_unchanged": true,
+      "network_attempt_count": 0,
+      "passed": true
+    },
+    {
+      "id": "03-rfc4180-bom-empty",
+      "approved_by_test_author": true,
+      "exit": 0,
+      "output_exists": true,
+      "input_unchanged": true,
+      "network_attempt_count": 0,
+      "headers_match": true,
+      "logical_rows": 3,
+      "exact_cell_values_preserved": true,
+      "passed": true
+    },
+    {
+      "id": "04-formula-text",
+      "approved_by_test_author": true,
+      "exit": 0,
+      "output_exists": true,
+      "input_unchanged": true,
+      "network_attempt_count": 0,
+      "headers_match": true,
+      "logical_rows": 3,
+      "exact_cell_values_preserved": true,
+      "passed": true
+    }
+  ],
+  "same_headers_different_rows_identical_mappings": true,
+  "all_original_input_hashes_unchanged": true,
+  "all_generated_reviews_unapproved": true,
+  "all_generated_report_and_review_modes": "0600",
+  "offline": {
+    "warm_cache": "Real inference under Node fetch/http/https/net/tls denial;0attempts across all final cases",
+    "empty_cache_prior_targeted_check": "Earlier strict offline empty-cache run exited1,0attempts,no report. Final source delta was collision/writer only; empty-cache evidence retained separately.",
+    "instrumentation_limit": "Node API instrumentation; not OS packet capture"
+  },
+  "resolved_issue": "Low-score Notes no longer blocks valid Units purchased, confirmed in both final quoted-data and formula-data fixtures",
+  "all_subprocesses_exited": true,
+  "customers_sales_prizes_claimed": false,
+  "limits": [
+    "Six synthetic fixtures do not establish real-customer accuracy",
+    "Runtime numbers are local recorded observations, not a cross-machine benchmark",
+    "Cosine similarity is not calibrated correctness probability",
+    "No spreadsheet formula neutralization; logical values preserved but CSV bytes may differ",
+    "No blanket production-security guarantee"
+  ]
+}

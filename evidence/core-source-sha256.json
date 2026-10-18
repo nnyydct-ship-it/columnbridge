@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-18T08:16:39.389664+00:00",
+  "definition": "SHA256 of sorted relative-path NUL file-SHA256 newline records; scope src/**/*.js,bin/**/*.js,package.json,package-lock.json",
+  "sha256": "780e2e4c5d35400630fc957b345cf57181e105687719f1099f456d406e55e356",
+  "files": [
+    {
+      "path": "bin/columnbridge.js",
+      "sha256": "4ae0499d32a346d6d9af2fb2d5db45491a6a9fb757ccc086c77e69a7788cd168",
+      "bytes": 3363
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "5c9d61ec0bf06964122044d4a166eb68b067e037fb784263c23bdace7e9b140c",
+      "bytes": 39047
+    },
+    {
+      "path": "package.json",
+      "sha256": "e75e4723ef7694e19c973a3a118dcb360cc4d227fe4e6caac4d4ea8baa1361ca",
+      "bytes": 957
+    },
+    {
+      "path": "src/csv.js",
+      "sha256": "50fcf21a4de2bdf31c35d1c5b6fc663f977303ff45fea857b0cf6dc45ef48727",
+      "bytes": 2166
+    },
+    {
+      "path": "src/files.js",
+      "sha256": "e3c8561bf6483dcea05948735a47ff315dd7e3d3409f974f535061da66a8be33",
+      "bytes": 1228
+    },
+    {
+      "path": "src/index.js",
+      "sha256": "4c28af71b460ac3ac0a826ab7ae0628d0590cff57cc07bc1d028d194cbf5e69f",
+      "bytes": 1706
+    },
+    {
+      "path": "src/matching.js",
+      "sha256": "f27ffb341208085e9887887e8820eb3bd3198bf291eded4ef1ade55fa648581f",
+      "bytes": 6290
+    },
+    {
+      "path": "src/model.js",
+      "sha256": "a17f160a43155ef698a03b8b3df40d79b3a88ade46b3acb5b70417f6af19b384",
+      "bytes": 1668
+    }
+  ],
+  "stable_before_after": true
+}

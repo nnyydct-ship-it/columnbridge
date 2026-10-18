@@ -1,0 +1,20 @@
+{
+  "approved": false,
+  "sourceHeadersSha256": "0aa684c87bf0db75975491862c0c51818aac625c5fbce42172d9484b1345b953",
+  "schemaFields": [
+    "customer_name",
+    "contact_email",
+    "telephone",
+    "address",
+    "comments"
+  ],
+  "rename": {
+    "full name": "customer_name",
+    "email address": "contact_email",
+    "cell phone": "telephone",
+    "billing address": null,
+    "shipping address": null,
+    "notes": "comments"
+  },
+  "instructions": "Review every entry. null keeps the original header. Resolve collisions, then explicitly set approved to true. Similarity is not a probability."
+}

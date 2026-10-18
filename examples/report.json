@@ -1,0 +1,218 @@
+{
+  "formatVersion": 1,
+  "sourceHeaders": [
+    "full name",
+    "email address",
+    "cell phone",
+    "billing address",
+    "shipping address",
+    "notes"
+  ],
+  "sourceHeadersSha256": "0aa684c87bf0db75975491862c0c51818aac625c5fbce42172d9484b1345b953",
+  "schemaFields": [
+    "customer_name",
+    "contact_email",
+    "telephone",
+    "address",
+    "comments"
+  ],
+  "model": {
+    "id": "Xenova/all-MiniLM-L6-v2",
+    "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+    "dtype": "q8",
+    "device": "cpu",
+    "threads": 2,
+    "license": "Apache-2.0",
+    "loadMs": 5763.780667000001
+  },
+  "inference": {
+    "textCount": 11,
+    "embeddingDimensions": 384,
+    "inferenceMs": 14.222499999999854
+  },
+  "privacy": {
+    "inference": "local_cpu",
+    "rowValuesUsed": false,
+    "remoteInference": false,
+    "offline": false
+  },
+  "thresholds": {
+    "minScore": 0.48,
+    "minMargin": 0.08,
+    "calibratedProbability": false
+  },
+  "mappings": [
+    {
+      "source": "full name",
+      "proposedTarget": "customer_name",
+      "score": 0.6007344328743811,
+      "runnerUp": {
+        "target": "contact_email",
+        "score": 0.20671324974266903
+      },
+      "margin": 0.3940211831317121,
+      "status": "suggested",
+      "reasons": [],
+      "alternatives": [
+        {
+          "target": "customer_name",
+          "score": 0.6007344328743811
+        },
+        {
+          "target": "contact_email",
+          "score": 0.20671324974266903
+        },
+        {
+          "target": "address",
+          "score": 0.1335016930765087
+        }
+      ]
+    },
+    {
+      "source": "email address",
+      "proposedTarget": "contact_email",
+      "score": 0.7274772196516378,
+      "runnerUp": {
+        "target": "customer_name",
+        "score": 0.3244179401021324
+      },
+      "margin": 0.40305927954950543,
+      "status": "suggested",
+      "reasons": [],
+      "alternatives": [
+        {
+          "target": "contact_email",
+          "score": 0.7274772196516378
+        },
+        {
+          "target": "customer_name",
+          "score": 0.3244179401021324
+        },
+        {
+          "target": "address",
+          "score": 0.28869079610178516
+        }
+      ]
+    },
+    {
+      "source": "cell phone",
+      "proposedTarget": "telephone",
+      "score": 0.6332327193800588,
+      "runnerUp": {
+        "target": "customer_name",
+        "score": 0.18997832698583544
+      },
+      "margin": 0.4432543923942233,
+      "status": "suggested",
+      "reasons": [],
+      "alternatives": [
+        {
+          "target": "telephone",
+          "score": 0.6332327193800588
+        },
+        {
+          "target": "customer_name",
+          "score": 0.18997832698583544
+        },
+        {
+          "target": "contact_email",
+          "score": 0.16597091442190692
+        }
+      ]
+    },
+    {
+      "source": "billing address",
+      "proposedTarget": "address",
+      "score": 0.6815576729961451,
+      "runnerUp": {
+        "target": "customer_name",
+        "score": 0.3061529014464295
+      },
+      "margin": 0.37540477154971563,
+      "status": "needs_review",
+      "reasons": [
+        "target_collision"
+      ],
+      "alternatives": [
+        {
+          "target": "address",
+          "score": 0.6815576729961451
+        },
+        {
+          "target": "customer_name",
+          "score": 0.3061529014464295
+        },
+        {
+          "target": "telephone",
+          "score": 0.29720287831658687
+        }
+      ]
+    },
+    {
+      "source": "shipping address",
+      "proposedTarget": "address",
+      "score": 0.6414848009564664,
+      "runnerUp": {
+        "target": "contact_email",
+        "score": 0.36981605852734345
+      },
+      "margin": 0.271668742429123,
+      "status": "needs_review",
+      "reasons": [
+        "target_collision"
+      ],
+      "alternatives": [
+        {
+          "target": "address",
+          "score": 0.6414848009564664
+        },
+        {
+          "target": "contact_email",
+          "score": 0.36981605852734345
+        },
+        {
+          "target": "customer_name",
+          "score": 0.2548460289958212
+        }
+      ]
+    },
+    {
+      "source": "notes",
+      "proposedTarget": "comments",
+      "score": 0.5762640332353446,
+      "runnerUp": {
+        "target": "telephone",
+        "score": 0.18055854259308732
+      },
+      "margin": 0.39570549064225724,
+      "status": "suggested",
+      "reasons": [],
+      "alternatives": [
+        {
+          "target": "comments",
+          "score": 0.5762640332353446
+        },
+        {
+          "target": "telephone",
+          "score": 0.18055854259308732
+        },
+        {
+          "target": "customer_name",
+          "score": 0.1206350308214627
+        }
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "target": "address",
+      "sources": [
+        "billing address",
+        "shipping address"
+      ]
+    }
+  ],
+  "requiredUnmapped": [],
+  "needsReview": true,
+  "action": "report_only_no_csv_changed"
+}

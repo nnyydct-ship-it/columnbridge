@@ -1,0 +1,9 @@
+{
+  "fields": [
+    { "name": "customer_name", "description": "Full name of the customer or contact", "required": true },
+    { "name": "contact_email", "description": "Email address for contacting a person", "required": true },
+    { "name": "telephone", "description": "Mobile or cell phone telephone number" },
+    { "name": "address", "description": "Street address, which may mean a billing or shipping location" },
+    { "name": "comments", "description": "Free text notes or comments" }
+  ]
+}

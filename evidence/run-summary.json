@@ -1,0 +1,56 @@
+{
+  "recorded_at_utc": "2026-10-18T08:12:20.610722+00:00",
+  "actual_model_id": "Xenova/all-MiniLM-L6-v2",
+  "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+  "license": "Apache-2.0",
+  "runtime": "@huggingface/transformers3.8.1+onnxruntime-node1.21.0",
+  "node": "v24.21.0",
+  "dtype": "q8",
+  "device": "cpu",
+  "configured_intra_op_threads": 2,
+  "configured_inter_op_threads": 1,
+  "embedding_dimensions": 384,
+  "first_run_includes_download": {
+    "wall_seconds": 8.58,
+    "max_rss_bytes": 207601664.0,
+    "peak_memory_footprint_bytes": 142286000.0
+  },
+  "offline_run_network_denied": {
+    "wall_seconds": 0.35,
+    "max_rss_bytes": 197591040.0,
+    "peak_memory_footprint_bytes": 137993008.0
+  },
+  "offline_network_guard": {
+    "attemptedRequests": 0,
+    "policy": "HTTP and fetch throw on use"
+  },
+  "cache_total_bytes": 23685047,
+  "model_files": [
+    {
+      "path": ".cache/models/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/config.json",
+      "bytes": 650,
+      "sha256": "7135149f7cffa1a573466c6e4d8423ed73b62fd2332c575bf738a0d033f70df7"
+    },
+    {
+      "path": ".cache/models/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/onnx/model_quantized.onnx",
+      "bytes": 22972370,
+      "sha256": "afdb6f1a0e45b715d0bb9b11772f032c399babd23bfc31fed1c170afc848bdb1"
+    },
+    {
+      "path": ".cache/models/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer.json",
+      "bytes": 711661,
+      "sha256": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0"
+    },
+    {
+      "path": ".cache/models/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer_config.json",
+      "bytes": 366,
+      "sha256": "9261e7d79b44c8195c1cada2b453e55b00aeb81e907a6664974b4d7776172ab3"
+    }
+  ],
+  "test_result": "19 deterministic tests passed; actual model run separate, not mocked.",
+  "limitations": [
+    "No paid users or actual sales claimed.",
+    "Cosine thresholds uncalibrated; all mappings require human review.",
+    "First-party demo is synthetic; independent QA is a separate agent artifact."
+  ]
+}

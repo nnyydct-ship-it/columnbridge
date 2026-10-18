@@ -1,0 +1,8 @@
+full name → customer_name | cosine 0.601 | margin 0.394 | suggested; review before applying
+email address → contact_email | cosine 0.727 | margin 0.403 | suggested; review before applying
+cell phone → telephone | cosine 0.633 | margin 0.443 | suggested; review before applying
+billing address → address | cosine 0.682 | margin 0.375 | target_collision
+shipping address → address | cosine 0.641 | margin 0.272 | target_collision
+notes → comments | cosine 0.576 | margin 0.396 | suggested; review before applying
+Report: examples/report.json
+CSV unchanged. Review template: examples/report.json.review.json
