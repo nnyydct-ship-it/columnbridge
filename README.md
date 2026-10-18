@@ -6,6 +6,14 @@ For a freelancer importing a shop's customer export, `cell phone`, `telephone`, 
 
 This is an original prototype built for Hacktoberfest Open-Source AI Challenge Week 2: Side Hustle. No customer, sale, prize or paid deployment is claimed.
 
+## Demo
+
+[Watch the36-second walkthrough](https://raw.githubusercontent.com/nnyydct-ship-it/columnbridge/main/demo/columnbridge-demo.mp4). It is rendered from actual saved CLI outputs using synthetic data, not a raw screen recording.
+
+![Actual model output walkthrough](demo/preview.png)
+
+[Challenge article draft](docs/dev-entry-DRAFT.md) — not an accepted entry or an award.
+
 ## Quick start
 
 Requires Node.js 20+ and npm. Tested here with Node 24 on macOS ARM64.

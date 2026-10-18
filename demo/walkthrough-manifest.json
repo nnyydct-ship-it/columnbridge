@@ -1,0 +1,20 @@
+{
+  "kind": "rendered_walkthrough_from_actual_saved_cli_report",
+  "not_raw_screen_recording": true,
+  "source_report": "examples/report.json",
+  "model": {
+    "id": "Xenova/all-MiniLM-L6-v2",
+    "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+    "dtype": "q8",
+    "device": "cpu",
+    "threads": 2,
+    "license": "Apache-2.0",
+    "loadMs": 5763.780667000001
+  },
+  "slides": [
+    "01.png",
+    "02.png",
+    "03.png"
+  ],
+  "synthetic_data": true
+}
